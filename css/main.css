@@ -7,13 +7,11 @@ body {
 	display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
 	font-size: 1em;
 }
 
 .container{
 	max-width: 1200px;
-	margin: 0 auto;
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +44,6 @@ p {
 /*The widths are in a percentage!*/
 header {
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -59,24 +56,31 @@ header h1 {
 	margin: 0;
 	padding: 20px 0;
 	border-bottom: 3px solid #77a466;
+	width: 100%;
 
 }
 header h1 span {
 	color: #77a466;
 }
 
+header nav {
+	padding: 20px 0;
+	width: 100%;
+}
+
 header nav ul {
 	margin: 0;
-	padding: 20px 0;
+	padding: 0;
 }
+
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 15px 10px;
+	padding: 10px 0;
 	list-style: none;
-	text-align: center;
 }
+
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
@@ -85,25 +89,15 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	margin: 0 auto;
 	display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
 }
 
-.main-image {
-	height: auto;
-	text-align: center;
-}
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
-}
-
-.main-title {
-	height: auto;
-	width: 100%;
 }
 .main-title h2 {
 	text-align: left;
@@ -120,20 +114,7 @@ header nav ul li a{
 .section-two,
 .section-three {
 	width: 100%;
-	height: auto;
 	border-top: 1px solid #eee;
-}
-
-.section-one h3 {
-	padding: 10px 0;
-}
-
-.section-two {
-
-}
-
-.section-two h3,
-.section-three h3 {
 }
 
 .menu {
@@ -149,19 +130,16 @@ header nav ul li a{
 	color: #333;
 	font-size: 16px;
 	line-height: 21px;
-	padding: 0;
 }
 
 .address {
 	font-size: 1em;
 	line-height: 24px;
-	padding: 0;
 }
 
 /*The widths are in a percentage!*/
 footer {
 	border-top: 3px solid #eee;
-	margin: 0 auto;
 	text-align: center;
 	display: flex;
     justify-content: center;
@@ -173,5 +151,28 @@ footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: .875em;
+}
+
+/* TABLET STYLES */
+
+@media all and (min-width: 768px) {
+	.bottom-section {
+
+	}
+	.section-one {
+
+	}
+	.section-two {
+
+	}
+	.section-three {
+
+	}
+}
+
+
+/* DESKTOP STYLES */
+@media all and (min-width: 1200px) {
+	
 }
